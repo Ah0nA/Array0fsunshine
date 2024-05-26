@@ -22,23 +22,6 @@ public:
 };
 
 
-//Interesting solution.
-class Solution
-{
-public:
-    bool arrayStringsAreEqual(std::vector<std::string> &word1, std::vector<std::string> &word2)
-    {
-        int i = 0 , j = 0;
 
-        while(i < word1.size() && j < word2.size()){
-            if(word1[i] != word2[j]){
-                return false;
-            }
-            i++;
-            j++;
-        }
-        return i == word1.size() && j == word2.size();
 
-    }
-};
     
